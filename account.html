@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Account Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="css/navbar.css" rel="stylesheet" >
+    <link href="css/footer.css" rel="stylesheet" >
+    <link href="css/account.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand">TravelVenture</a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav nav-underline">
+                <a class="nav-link" href="homepage.html">Home</a>
+              </li>
+              <li class="nav nav-underline">
+                <a class="nav-link" href="packages.html">Packages</a>
+              </li>
+              <li class="nav nav-underline">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <ul class="nav justify-content-end">
+              <a class="navbar-brand" href="cart.html">
+                <img src="images/cart.png" alt="cart" width="30" height="24">
+              </a>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              <li class="nav-item">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profile Name</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="account.html">Account Details</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="homepage.html">Log Out</a></li>
+                  </ul>
+                </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+   
+    <!-- body -->
+    <div class="container light-style flex-grow-1 container-p-y">
+
+      <h4 class="font-weight-bold py-3 mb-4">
+        Account Details
+      </h4>
+  
+      <div class="card overflow-hidden">
+        <div class="row no-gutters row-bordered row-border-light">
+          <div class="col-md-3 pt-0">
+            <div class="list-group list-group-flush account-settings-links">
+              <a class="list-group-item list-group-item-action active" data-toggle="list" href="#account-general">General</a>
+              <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-change-password">Change password</a>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="tab-content">
+              <div class="tab-pane fade active show" id="account-general">
+                <hr class="border-light m-0">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control mb-1" value=" " name="fname">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Age</label>
+                    <input type="text" class="form-control mb-1" value=" " name="age">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Sex</label>
+                    <input type="text" class="form-control mb-1" value=" " name="sex">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">E-mail</label>
+                    <input type="text" class="form-control mb-1" value=" " name="email">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Phone Number</label>
+                    <input type="text" class="form-control mb-1" value=" " name="pnumber">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Address</label>
+                    <input type="text" class="form-control" value="" name="address">
+                  </div>
+                </div>
+  
+              </div>
+              <div class="tab-pane fade" id="account-change-password">
+                <div class="card-body pb-2">
+  
+                  <div class="form-group">
+                    <label class="form-label">Current password</label>
+                    <input type="password" class="form-control" name="cpassword">
+                  </div>
+  
+                  <div class="form-group">
+                    <label class="form-label">New password</label>
+                    <input type="password" class="form-control" name="npassword">
+                  </div>
+  
+                  <div class="form-group">
+                    <label class="form-label">Repeat new password</label>
+                    <input type="password" class="form-control" name="recpassword">
+                  </div>
+  
+                </div>
+              </div>
+              
+  
+      <div class="text-right mt-3">
+        <button type="button" class="btn btn-primary">Save changes</button>&nbsp;
+        <button type="button" class="btn btn-default">Cancel</button>
+      </div>
+  
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+
+        
+    <!-- footer -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <footer>
+      <div class="footer-content">
+          <h3 style="color:rgb(255, 255, 255);">TravelVenture</h3>
+          <p>Raj Template is a blog website where you will find great tutorials on web design and development. Here each tutorial is beautifully described step by step with the required source code.</p>
+          <ul class="socials">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+      </div>
+      <div class="footer-bottom">
+          <p style="color:rgb(255, 255, 255);">Copyright &copy; <a href="#">TravelVenture</a>  </p>
+                  <div class="footer-menu">
+                    <ul class="f-menu">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="">About</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+      </div>
+  </footer>
+  </body>
+</html>
+

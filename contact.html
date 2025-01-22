@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="css/navbar.css" rel="stylesheet" >
+    <link href="css/footer.css" rel="stylesheet" >
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand">TravelVenture</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav nav-underline">
+              <a class="nav-link" href="homepage.html">Home</a>
+            </li>
+            <li class="nav nav-underline">
+              <a class="nav-link" href="packages.html">Packages</a>
+            </li>
+            <li class="nav nav-underline">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <ul class="nav justify-content-end">
+            <a class="navbar-brand" href="cart.html">
+              <img src="images/cart.png" alt="cart" width="30" height="24">
+            </a>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <li class="nav-item">
+              <a class="nav-link active" href="signin.html">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="register.html">Register</a>
+            </li>
+            <!-- <li class="nav-item">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profile Name</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="account.html">Account Details</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="homepage.html">Log Out</a></li>
+                </ul>
+              </li>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+   
+    <!-- body -->
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center mb-5">
+            <h2 class="heading-section">Contact Us</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="wrapper">
+              <div class="row no-gutters">
+                <div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
+                  <div class="contact-wrap w-100 p-md-5 p-4">
+                    <h3 class="mb-4">Get in touch</h3>
+                    <div id="form-message-warning" class="mb-4"></div> 
+                    <div id="form-message-success" class="mb-4">
+                      Your message was sent, thank you!
+                    </div>
+                    <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="label" for="name">Full Name</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                          </div>
+                        </div>
+                        <div class="col-md-6"> 
+                          <div class="form-group">
+                            <label class="label" for="email">Email Address</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label class="label" for="subject">Subject</label>
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label class="label" for="#">Message</label>
+                            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input type="submit" value="Send Message" class="btn btn-primary">
+                            <div class="submitting"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-5 d-flex align-items-stretch">
+                  <div class="info-wrap bg-primary w-100 p-md-5 p-4">
+                    <h3>Let's get in touch</h3>
+                    <p class="mb-4">We're open for any suggestion or just to have a chat</p>
+                    <div class="dbox w-100 d-flex align-items-start">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="fa fa-map-marker"></span>
+                      </div>
+                      <div class="text pl-3">
+                        <p><span>Address:</span>Mid-Baneshwor,   Kathmandu,Nepal</p>
+                      </div>
+                    </div>
+                    <div class="dbox w-100 d-flex align-items-center">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="fa fa-phone"></span>
+                      </div>
+                      <div class="text pl-3">
+                        <p><span>Phone:</span> <a>+977 1234567890</a></p>
+                      </div>
+                    </div>
+                    <div class="dbox w-100 d-flex align-items-center">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="fa fa-paper-plane"></span>
+                      </div>
+                      <div class="text pl-3">
+                        <p><span>Email:</span> <a href="#">info@yoursite.com</a></p>
+                      </div>
+                    </div>
+                    <div class="dbox w-100 d-flex align-items-center">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="fa fa-globe"></span>
+                      </div>
+                      <div class="text pl-3">
+                        <p><span>Website</span> <a href="#">yoursite.com</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- footer -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <footer>
+        <div class="footer-content">
+            <h3 style="color:rgb(255, 255, 255);">TravelVenture</h3>
+            <p>Raj Template is a blog website where you will find great tutorials on web design and development. Here each tutorial is beautifully described step by step with the required source code.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p style="color:rgb(255, 255, 255);">Copyright &copy; <a href="#">TravelVenture</a>  </p>
+                    <div class="footer-menu">
+                      <ul class="f-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                    </div>
+        </div>
+    </footer>
+</body>
+</html>

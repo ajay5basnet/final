@@ -1,0 +1,16 @@
+.form-control{
+    width: 130%;
+}
+
+.overflow-hidden{
+    width:130%;
+}
+
+.h-100{
+    width:90%;
+    margin-left:10%;
+    margin-right: 0%;
+    margin-top:-25px ;
+}
+
+

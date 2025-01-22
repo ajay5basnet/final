@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form id="registrationForm" method="post">
+      <label for="firstname">Full Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastname">Full Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="sex">Sex:</label>
+      <input type="radio" id="male" name="sex" value="male" required><label for="male">Male</label> 
+      <input type="radio" id="female" name="sex" value="female" required><label for="female">Female</label>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+      <button type="submit">Register</button>
+      <p>Have a account</p>
+      <a href="signin.html">Click Here</a>
+    </form>
+  </div>
+
+  <script src="js/register.js"></script>
+</body>
+</html>

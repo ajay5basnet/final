@@ -1,0 +1,14 @@
+.container-fluid{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000000;
+    width: 100%;
+}
+
+.nav-link{
+    color: black;
+}
+
+.navbar{
+    --bs-bg-opacity: 0;
+}
